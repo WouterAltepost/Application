@@ -9,7 +9,8 @@
       "SomerenService/1.0.0": {
         "dependencies": {
           "SomerenDAL": "1.0.0",
-          "SomerenModel": "1.0.0"
+          "SomerenModel": "1.0.0",
+          "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
           "SomerenService.dll": {}
@@ -194,6 +195,9 @@
         }
       },
       "SomerenModel/1.0.0": {
+        "dependencies": {
+          "System.Data.SqlClient": "4.8.5"
+        },
         "runtime": {
           "SomerenModel.dll": {}
         }

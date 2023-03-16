@@ -295,6 +295,9 @@
       "SomerenModel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Data.SqlClient": "4.8.5"
+        },
         "compile": {
           "bin/placeholder/SomerenModel.dll": {}
         },
@@ -814,23 +817,29 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "SomerenDAL >= 1.0.0",
-      "SomerenModel >= 1.0.0"
+      "SomerenModel >= 1.0.0",
+      "System.Data.SqlClient >= 4.8.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Link\\.nuget\\packages\\": {}
+    "C:\\Users\\wouteraltepost\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Link\\Documents\\Someren\\SomerenService\\SomerenService.csproj",
+      "projectUniqueName": "\\\\Mac\\Home\\Desktop\\Application\\SomerenService\\SomerenService.csproj",
       "projectName": "SomerenService",
-      "projectPath": "C:\\Users\\Link\\Documents\\Someren\\SomerenService\\SomerenService.csproj",
-      "packagesPath": "C:\\Users\\Link\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Link\\Documents\\Someren\\SomerenService\\obj\\",
+      "projectPath": "\\\\Mac\\Home\\Desktop\\Application\\SomerenService\\SomerenService.csproj",
+      "packagesPath": "C:\\Users\\wouteraltepost\\.nuget\\packages\\",
+      "outputPath": "\\\\Mac\\Home\\Desktop\\Application\\SomerenService\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Link\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\wouteraltepost\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -838,17 +847,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Link\\Documents\\Someren\\SomerenDAL\\SomerenDAL.csproj": {
-              "projectPath": "C:\\Users\\Link\\Documents\\Someren\\SomerenDAL\\SomerenDAL.csproj"
+            "\\\\Mac\\Home\\Desktop\\Application\\SomerenDAL\\SomerenDAL.csproj": {
+              "projectPath": "\\\\Mac\\Home\\Desktop\\Application\\SomerenDAL\\SomerenDAL.csproj"
             },
-            "C:\\Users\\Link\\Documents\\Someren\\SomerenModel\\SomerenModel.csproj": {
-              "projectPath": "C:\\Users\\Link\\Documents\\Someren\\SomerenModel\\SomerenModel.csproj"
+            "\\\\Mac\\Home\\Desktop\\Application\\SomerenModel\\SomerenModel.csproj": {
+              "projectPath": "\\\\Mac\\Home\\Desktop\\Application\\SomerenModel\\SomerenModel.csproj"
             }
           }
         }
@@ -862,6 +872,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "System.Data.SqlClient": {
+            "target": "Package",
+            "version": "[4.8.5, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -878,7 +894,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

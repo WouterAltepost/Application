@@ -9,7 +9,8 @@
       "SomerenUI/1.0.0": {
         "dependencies": {
           "SomerenModel": "1.0.0",
-          "SomerenService": "1.0.0"
+          "SomerenService": "1.0.0",
+          "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
           "SomerenUI.dll": {}
@@ -194,6 +195,9 @@
         }
       },
       "SomerenModel/1.0.0": {
+        "dependencies": {
+          "System.Data.SqlClient": "4.8.5"
+        },
         "runtime": {
           "SomerenModel.dll": {}
         }
@@ -201,7 +205,8 @@
       "SomerenService/1.0.0": {
         "dependencies": {
           "SomerenDAL": "1.0.0",
-          "SomerenModel": "1.0.0"
+          "SomerenModel": "1.0.0",
+          "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
           "SomerenService.dll": {}
