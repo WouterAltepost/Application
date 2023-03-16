@@ -61,3 +61,13 @@ C:\Users\Link\Documents\Someren\SomerenUI\obj\Debug\net6.0-windows\refint\Somere
 C:\Users\Link\Documents\Someren\SomerenUI\obj\Debug\net6.0-windows\SomerenUI.pdb
 C:\Users\Link\Documents\Someren\SomerenUI\obj\Debug\net6.0-windows\SomerenUI.genruntimeconfig.cache
 C:\Users\Link\Documents\Someren\SomerenUI\obj\Debug\net6.0-windows\ref\SomerenUI.dll
+C:\Users\Link\Documents\Someren\SomerenUI\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\Link\Documents\Someren\SomerenUI\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Link\Documents\Someren\SomerenUI\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+C:\Users\Link\Documents\Someren\SomerenUI\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Link\Documents\Someren\SomerenUI\bin\Debug\net6.0-windows\System.Security.Permissions.dll
+C:\Users\Link\Documents\Someren\SomerenUI\bin\Debug\net6.0-windows\System.Windows.Extensions.dll
+C:\Users\Link\Documents\Someren\SomerenUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Link\Documents\Someren\SomerenUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Link\Documents\Someren\SomerenUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Link\Documents\Someren\SomerenUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
