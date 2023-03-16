@@ -10,3 +10,15 @@ C:\Users\gerwin.vandijken\source\repos\Someren\SomerenModel\obj\Debug\net6.0\Som
 C:\Users\gerwin.vandijken\source\repos\Someren\SomerenModel\obj\Debug\net6.0\refint\SomerenModel.dll
 C:\Users\gerwin.vandijken\source\repos\Someren\SomerenModel\obj\Debug\net6.0\SomerenModel.pdb
 C:\Users\gerwin.vandijken\source\repos\Someren\SomerenModel\obj\Debug\net6.0\ref\SomerenModel.dll
+C:\Users\Link\Documents\Someren\SomerenModel\bin\Debug\net6.0\SomerenModel.deps.json
+C:\Users\Link\Documents\Someren\SomerenModel\bin\Debug\net6.0\SomerenModel.dll
+C:\Users\Link\Documents\Someren\SomerenModel\bin\Debug\net6.0\SomerenModel.pdb
+C:\Users\Link\Documents\Someren\SomerenModel\obj\Debug\net6.0\SomerenModel.csproj.AssemblyReference.cache
+C:\Users\Link\Documents\Someren\SomerenModel\obj\Debug\net6.0\SomerenModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Link\Documents\Someren\SomerenModel\obj\Debug\net6.0\SomerenModel.AssemblyInfoInputs.cache
+C:\Users\Link\Documents\Someren\SomerenModel\obj\Debug\net6.0\SomerenModel.AssemblyInfo.cs
+C:\Users\Link\Documents\Someren\SomerenModel\obj\Debug\net6.0\SomerenModel.csproj.CoreCompileInputs.cache
+C:\Users\Link\Documents\Someren\SomerenModel\obj\Debug\net6.0\SomerenModel.dll
+C:\Users\Link\Documents\Someren\SomerenModel\obj\Debug\net6.0\refint\SomerenModel.dll
+C:\Users\Link\Documents\Someren\SomerenModel\obj\Debug\net6.0\SomerenModel.pdb
+C:\Users\Link\Documents\Someren\SomerenModel\obj\Debug\net6.0\ref\SomerenModel.dll
