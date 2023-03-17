@@ -3,6 +3,11 @@ using SomerenModel;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System;
+using System.Threading.Tasks;
+using System.Linq;
+using System.Security.Cryptography;
+using Microsoft.VisualBasic.Logging;
+using System.Diagnostics;
 
 namespace SomerenUI
 {
@@ -13,27 +18,66 @@ namespace SomerenUI
             InitializeComponent();
         }
 
-        private void ShowDashboardPanel()
+        public async Task<dynamic> ProcessList(Func<dynamic> targetFunction)
         {
-            // hide all other panels
-            pnlStudents.Hide();
-
-            // show dashboard
-            pnlDashboard.Show();
+            PanelTitle.Text = "Loading...";
+            return await Task.Factory.StartNew(() =>
+            {
+                return targetFunction();
+            });
         }
 
-        private void ShowStudentsPanel()
+        private void ShowDashboardPanel()
         {
-            // hide all other panels
-            pnlDashboard.Hide();
+            // Reset the main panel and hide it
+            ResetPanel();
+            PanelMain.Visible = false;
 
-            // show students
-            pnlStudents.Show();
+            // show dashboard
+            pnlDashboard.Visible = true;
+        }
+
+        private async void ShowLecturersPanel()
+        {
+            try
+            {
+                ResetPanel();
+                List<Human> teachers = await ProcessList(GetTeachers);
+                ResetPanel(title: "Lecturers");
+
+                DisplayTeachers(teachers);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Something went wrong while loading the teachers: " + e.Message);
+            }
+
+        }
+
+        private void ResetPanel(string title = "") {
+            PanelMain.Visible = true;
+            PanelTitle.Text = title;
+            ListViewMain.Clear();
+        }
+
+        private async void ShowStudentsPanel()
+        {
+
+            /*
+            List<Room> rooms = GetRooms();
+
+            foreach (Room room in rooms)
+            {
+                MessageBox.Show(room.ToString());
+            }
+             */
 
             try
             {
-                // get and display all students
-                List<Student> students = GetStudents();
+                ResetPanel();
+                List<Human> students = await ProcessList(GetStudents);
+                ResetPanel(title: "Students");
+
                 DisplayStudents(students);
             }
             catch (Exception e)
@@ -42,23 +86,50 @@ namespace SomerenUI
             }
         }
 
-        private List<Student> GetStudents()
+        private List<Room> GetRooms()
+        {
+            RoomService roomService = new RoomService();
+            List<Room> rooms = roomService.GetRooms();
+            return rooms;
+        }
+
+        private List<Human> GetStudents()
         {
             StudentService studentService = new StudentService();
             List<Student> students = studentService.GetStudents();
-            return students;
+            return students.Cast<Human>().ToList();
         }
 
-        private void DisplayStudents(List<Student> students)
+        private List<Human> GetTeachers()
+        {
+            TeacherService teacherService = new TeacherService();
+            List<Teacher> teachers = teacherService.GetTeacher();
+            return teachers.Cast<Human>().ToList();
+        }
+
+        private void DisplayStudents(List<Human> students)
         {
             // clear the listview before filling it
-            listViewStudents.Clear();
+            ListViewMain.Clear();
 
             foreach (Student student in students)
             {
                 ListViewItem li = new ListViewItem(student.Name);
                 li.Tag = student;   // link student object to listview item
-                listViewStudents.Items.Add(li);
+                ListViewMain.Items.Add(li);
+            }
+        }
+
+        private void DisplayTeachers(List<Human> teachers)
+        {
+            // clear the listview before filling it
+            ListViewMain.Clear();
+
+            foreach (Teacher teacher in teachers)
+            {
+                ListViewItem li = new ListViewItem(teacher.Name);
+                li.Tag = teacher;   // link student object to listview item
+                ListViewMain.Items.Add(li);
             }
         }
 
@@ -76,5 +147,17 @@ namespace SomerenUI
         {
             ShowStudentsPanel();
         }
+        
+        private void lecturersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowLecturersPanel();
+        }
+
+        private void listViewStudents_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
