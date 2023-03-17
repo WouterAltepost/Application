@@ -54,6 +54,36 @@ namespace SomerenUI
 
         }
 
+        private async void ShowRoomsPanel()
+        {
+            try
+            {
+                ResetPanel();
+                List<Room> rooms = await ProcessList(GetRooms);
+                ResetPanel(title: "Rooms");
+
+                DisplayRooms(rooms);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Something went wrong while loading the rooms: " + e.Message);
+            }
+
+        }
+
+        private void DisplayRooms(List<Room> rooms)
+        {
+            // clear the listview before filling it
+            ListViewMain.Clear();
+
+            foreach (Room room in rooms)
+            {
+                ListViewItem li = new ListViewItem(room.Id.ToString());
+                li.Tag = rooms;   // link student object to listview item
+                ListViewMain.Items.Add(li);
+            }
+        }
+
         private void ResetPanel(string title = "") {
             PanelMain.Visible = true;
             PanelTitle.Text = title;
@@ -158,6 +188,9 @@ namespace SomerenUI
 
         }
 
-        
+        private void roomsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowRoomsPanel();
+        }
     }
 }
