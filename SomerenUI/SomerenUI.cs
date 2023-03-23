@@ -24,7 +24,7 @@ namespace SomerenUI
             return await Task.Factory.StartNew(() =>
             {
                 return targetFunction();
-            });
+            }); 
         }
 
         private void ShowDashboardPanel()
@@ -61,6 +61,7 @@ namespace SomerenUI
                 ResetPanel();
                 List<Room> rooms = await ProcessList(GetRooms);
                 ResetPanel(title: "Rooms");
+               
 
                 DisplayRooms(rooms);
             }
@@ -75,13 +76,26 @@ namespace SomerenUI
         {
             // clear the listview before filling it
             ListViewMain.Clear();
+            
+            ListViewMain.Columns.Add("Number");
+            ListViewMain.Columns.Add("Type");
+            ListViewMain.Columns.Add("Capacity");
+            ListViewMain.Columns.Add("room_number");
 
             foreach (Room room in rooms)
             {
                 ListViewItem li = new ListViewItem(room.Id.ToString());
-                li.Tag = rooms;   // link student object to listview item
+                
+                li.SubItems.Add(room.Type.ToString());
+                li.SubItems.Add(room.Capacity.ToString());
+                li.SubItems.Add(room.Number.ToString());
+
+                li.Tag = rooms;   // link room object to listview item.
                 ListViewMain.Items.Add(li);
             }
+            ListViewMain.Columns[0].Width = 150;
+            ListViewMain.Columns[1].Width = 150;
+            ListViewMain.View = View.Details;
         }
 
         private void ResetPanel(string title = "") {

@@ -34,3 +34,15 @@ C:\Users\codri\OneDrive\Documents\GitHub\Application\SomerenModel\obj\Debug\net6
 C:\Users\codri\OneDrive\Documents\GitHub\Application\SomerenModel\obj\Debug\net6.0\refint\SomerenModel.dll
 C:\Users\codri\OneDrive\Documents\GitHub\Application\SomerenModel\obj\Debug\net6.0\SomerenModel.pdb
 C:\Users\codri\OneDrive\Documents\GitHub\Application\SomerenModel\obj\Debug\net6.0\ref\SomerenModel.dll
+\\Mac\Home\Documents\database project\Application\SomerenModel\bin\Debug\net6.0\SomerenModel.deps.json
+\\Mac\Home\Documents\database project\Application\SomerenModel\bin\Debug\net6.0\SomerenModel.dll
+\\Mac\Home\Documents\database project\Application\SomerenModel\bin\Debug\net6.0\SomerenModel.pdb
+\\Mac\Home\Documents\database project\Application\SomerenModel\obj\Debug\net6.0\SomerenModel.csproj.AssemblyReference.cache
+\\Mac\Home\Documents\database project\Application\SomerenModel\obj\Debug\net6.0\SomerenModel.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Documents\database project\Application\SomerenModel\obj\Debug\net6.0\SomerenModel.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\database project\Application\SomerenModel\obj\Debug\net6.0\SomerenModel.AssemblyInfo.cs
+\\Mac\Home\Documents\database project\Application\SomerenModel\obj\Debug\net6.0\SomerenModel.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\database project\Application\SomerenModel\obj\Debug\net6.0\SomerenModel.dll
+\\Mac\Home\Documents\database project\Application\SomerenModel\obj\Debug\net6.0\refint\SomerenModel.dll
+\\Mac\Home\Documents\database project\Application\SomerenModel\obj\Debug\net6.0\SomerenModel.pdb
+\\Mac\Home\Documents\database project\Application\SomerenModel\obj\Debug\net6.0\ref\SomerenModel.dll

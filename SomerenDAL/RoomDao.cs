@@ -10,7 +10,7 @@ namespace SomerenDAL
     {
         public List<Room> GetAllRooms()
         {
-            string query = "SELECT id,type FROM [room]";
+            string query = "SELECT id,type,capacity,room_number FROM [room]";
             SqlParameter[] sqlParameters = new SqlParameter[0];
             return ReadTables(ExecuteSelectQuery(query, sqlParameters));
         }
@@ -25,7 +25,9 @@ namespace SomerenDAL
                     new Room()
                     {
                         Id = (int)dr["id"],
-                        Type = (int)dr["type"] == 0 ? true : false,
+                        Type = (RoomType)(int)dr["type"],
+                        Capacity = (int)dr["capacity"],
+                        Number = (int)dr["room_number"],
                     }
                 );
             };

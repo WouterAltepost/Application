@@ -43,3 +43,18 @@ C:\Users\codri\OneDrive\Documents\GitHub\Application\SomerenDAL\obj\Debug\net6.0
 C:\Users\codri\OneDrive\Documents\GitHub\Application\SomerenDAL\obj\Debug\net6.0\refint\SomerenDAL.dll
 C:\Users\codri\OneDrive\Documents\GitHub\Application\SomerenDAL\obj\Debug\net6.0\SomerenDAL.pdb
 C:\Users\codri\OneDrive\Documents\GitHub\Application\SomerenDAL\obj\Debug\net6.0\ref\SomerenDAL.dll
+\\Mac\Home\Documents\database project\Application\SomerenDAL\bin\Debug\net6.0\SomerenDAL.deps.json
+\\Mac\Home\Documents\database project\Application\SomerenDAL\bin\Debug\net6.0\SomerenDAL.dll
+\\Mac\Home\Documents\database project\Application\SomerenDAL\bin\Debug\net6.0\SomerenDAL.pdb
+\\Mac\Home\Documents\database project\Application\SomerenDAL\bin\Debug\net6.0\SomerenModel.dll
+\\Mac\Home\Documents\database project\Application\SomerenDAL\bin\Debug\net6.0\SomerenModel.pdb
+\\Mac\Home\Documents\database project\Application\SomerenDAL\obj\Debug\net6.0\SomerenDAL.csproj.AssemblyReference.cache
+\\Mac\Home\Documents\database project\Application\SomerenDAL\obj\Debug\net6.0\SomerenDAL.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Documents\database project\Application\SomerenDAL\obj\Debug\net6.0\SomerenDAL.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\database project\Application\SomerenDAL\obj\Debug\net6.0\SomerenDAL.AssemblyInfo.cs
+\\Mac\Home\Documents\database project\Application\SomerenDAL\obj\Debug\net6.0\SomerenDAL.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\database project\Application\SomerenDAL\obj\Debug\net6.0\SomerenDAL.csproj.CopyComplete
+\\Mac\Home\Documents\database project\Application\SomerenDAL\obj\Debug\net6.0\SomerenDAL.dll
+\\Mac\Home\Documents\database project\Application\SomerenDAL\obj\Debug\net6.0\refint\SomerenDAL.dll
+\\Mac\Home\Documents\database project\Application\SomerenDAL\obj\Debug\net6.0\SomerenDAL.pdb
+\\Mac\Home\Documents\database project\Application\SomerenDAL\obj\Debug\net6.0\ref\SomerenDAL.dll
