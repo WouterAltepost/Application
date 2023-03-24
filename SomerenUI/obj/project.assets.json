@@ -837,23 +837,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\codrin_andrei\\.nuget\\packages\\": {},
+    "C:\\Users\\wouteraltepost\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\Mac\\Home\\Documents\\database project\\Application\\SomerenUI\\SomerenUI.csproj",
+      "projectUniqueName": "\\\\Mac\\Home\\Desktop\\Application\\SomerenUI\\SomerenUI.csproj",
       "projectName": "SomerenUI",
-      "projectPath": "\\\\Mac\\Home\\Documents\\database project\\Application\\SomerenUI\\SomerenUI.csproj",
-      "packagesPath": "C:\\Users\\codrin_andrei\\.nuget\\packages\\",
-      "outputPath": "\\\\Mac\\Home\\Documents\\database project\\Application\\SomerenUI\\obj\\",
+      "projectPath": "\\\\Mac\\Home\\Desktop\\Application\\SomerenUI\\SomerenUI.csproj",
+      "packagesPath": "C:\\Users\\wouteraltepost\\.nuget\\packages\\",
+      "outputPath": "\\\\Mac\\Home\\Desktop\\Application\\SomerenUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\codrin_andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\wouteraltepost\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -862,17 +862,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "\\\\Mac\\Home\\Documents\\database project\\Application\\SomerenModel\\SomerenModel.csproj": {
-              "projectPath": "\\\\Mac\\Home\\Documents\\database project\\Application\\SomerenModel\\SomerenModel.csproj"
+            "\\\\Mac\\Home\\Desktop\\Application\\SomerenModel\\SomerenModel.csproj": {
+              "projectPath": "\\\\Mac\\Home\\Desktop\\Application\\SomerenModel\\SomerenModel.csproj"
             },
-            "\\\\Mac\\Home\\Documents\\database project\\Application\\SomerenService\\SomerenService.csproj": {
-              "projectPath": "\\\\Mac\\Home\\Documents\\database project\\Application\\SomerenService\\SomerenService.csproj"
+            "\\\\Mac\\Home\\Desktop\\Application\\SomerenService\\SomerenService.csproj": {
+              "projectPath": "\\\\Mac\\Home\\Desktop\\Application\\SomerenService\\SomerenService.csproj"
             }
           }
         }
@@ -905,7 +906,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
